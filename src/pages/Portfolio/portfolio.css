@@ -1,0 +1,35 @@
+/* src/App.css */
+.custom-card {
+  cursor: pointer;
+}
+
+.card-overlay {
+  background: rgba(104, 80, 50, 0.5);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  border-radius: 0.375rem;
+}
+
+.custom-card:hover .card-overlay {
+  opacity: 1;
+}
+.list-hover{
+    transition: line-height 0.7s;
+}
+.list-hover:hover{
+    line-height: 10px;
+}
+
+.portfolio-item {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.isotope-hidden {
+  opacity: 0 !important;
+  transform: translateY(30px) !important;
+  pointer-events: none;
+}
+
+
