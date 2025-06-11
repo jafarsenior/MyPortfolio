@@ -1,3 +1,4 @@
+
 /* Background image */
 .background-image {
   position: fixed;
@@ -23,6 +24,7 @@
   box-shadow:20px 30px 60px #685032;
 
 }
+
 
 .sidebar.collapsed {
   width: 100px;

@@ -62,21 +62,10 @@ const About = () => {
                 <div className="about-me">
                   <h4>About me</h4>
                   <p>
-                    Curabitur non nulla sit amet nisl tempus convallis quis ac
-                    lectus. Curabitur arcu erat, accumsan id imperdiet et,
-                    porttitor at sem. Praesent sapien massa, convallis a
-                    pellentesque nec, egestas non nisi.
+                    Hello there! My name is Ja'far and I am a web developer.
                   </p>
                   <p>
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                    Vivamus suscipit tortor eget felis porttitor volutpat.
-                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                    amet dui.
-                  </p>
-                  <p>
-                    Quisque velit nisi, pretium ut lacinia in, elementum id
-                    enim. Mauris blandit aliquet elit, eget tincidunt nibh
-                    pulvinar a.
+                    I am currently gaining experience. Information technology is becoming popular in the developing world, so I want to become a strong programmer in my field of study. I studied at NAJOT TALIM in 2023-2024.
                   </p>
                 </div>
               </div>
