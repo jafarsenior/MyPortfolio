@@ -8,7 +8,7 @@ const About = lazy(() => import('../pages/About/About'));
 const Services = lazy(() => import('../pages/Services/Services'));
 const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio'));
 const Resume = lazy(() => import('../pages/Resume/Resume'));
-const Contact = lazy(() => import('../pages/Contact/Contact'));
+const Contact = lazy(() => import('../pages/contact/Contact'));
 const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 
 const loader = (Component) => (
