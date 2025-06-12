@@ -12,7 +12,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     fetch("https://684966e545f4c0f5ee714084.mockapi.io/projects/")
-      .then(r => r.json())
+      .then((r) => r.json())
       .then(setProjects)
       .catch(console.error);
 
@@ -40,20 +40,36 @@ const Portfolio = () => {
           Filtering + responsive layout from MockAPI
         </p>
 
-        <ul className="d-flex justify-content-center gap-5 flex-wrap my-4 list-unstyled">
+        {/* Filter buttons for large screens */}
+<ul className="d-none d-sm-flex justify-content-center gap-4 flex-wrap my-4 list-unstyled">
   {["*", "app", "product", "branding", "books"].map(f => (
     <li
       key={f}
-      className="list-hover fs-3 fw-medium text-info-emphasis"
+      className="list-hover fs-5 fw-medium text-info-emphasis"
       onClick={() => handleFilter(f)}
+      style={{ cursor: "pointer" }}
     >
       {f === "*" ? "All" : f}
     </li>
   ))}
 </ul>
 
+{/* Dropdown for small screens */}
+<div className="d-sm-none mb-4 text-center">
+  <select
+    className="form-select w-75 mx-auto"
+    onChange={(e) => handleFilter(e.target.value)}
+  >
+    {["*", "app", "product", "branding", "books"].map(f => (
+      <option key={f} value={f}>
+        {f === "*" ? "All" : f}
+      </option>
+    ))}
+  </select>
+</div>
+
         <div className="row" ref={gridRef}>
-          {projects.map(p => (
+          {projects.map((p) => (
             <div
               key={p.id}
               className={`col-lg-4 col-md-6 col-sm-12 portfolio-item ${p.category} mb-4`}

@@ -6,8 +6,8 @@ const About = () => {
   return (
     <>
       <div className="container">
-        <section id="about" className="about section mx-5"  style={{ minHeight: "100vh", backdropFilter: "blur(3px)" }}>
-          <div className="container" data-aos="fade-up" data-aos-delay="100">
+        <section id="about" className="about section mb-5 mx-0 mx-md-5"  style={{ minHeight: "100vh", backdropFilter: "blur(3px)" }}>
+          <div className="container pb-5" data-aos="fade-up" data-aos-delay="100">
             <div className="row gy-4 mt-5">
               <div
                 className="col-md-6 d-flex flex-column justify-content-center align-items-center"
